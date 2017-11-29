@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+}
+
+body{
+	width: 100%;
+	background-size: 100%;
+}
+
+.cat1 .cat2 .cat3{
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+
+@media only screen {
+	body{
+	background-image: url(../img/sunny-day.jpg);
+
+}
+.cat3{
+	position: absolute;
+	width: 50%;
+	margin-top: -600px;
+	margin-left:-200px;
+	visibility: visible;	
+}
+.cat1, .cat2{
+	visibility: hidden;
+}
+
+
+@media only screen and (min-width: 550px) {
+	body{
+	background-image: url(../img/night.jpg);
+
+}
+.cat2{
+	position: absolute;
+	margin-left: -200px;
+	margin-top: -220px;
+	visibility: visible;
+}
+.cat1, .cat3{
+	visibility: hidden;
+
+}
+}
+
+
+@media only screen and (min-width: 950px) {
+
+body{
+	background-image: url(../img/dawn.png);
+
+}
+.cat1{
+	top:370px;
+	width: 40%;
+	position: relative;
+	margin-left: -50px;
+	visibility: visible;
+}
+.cat2, .cat3{
+	visibility: hidden;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
